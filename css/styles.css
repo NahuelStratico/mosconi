@@ -11,7 +11,7 @@
 * {
   font-family: "Montserrat", sans-serif; }
   * .social {
-    width: 100vw;
+    width: 100%;
     height: auto;
     padding: 8px 0;
     background-color: #106EEA; }
@@ -45,3 +45,46 @@
           width: 20%;
           justify-content: space-between;
           font-size: 1.2em; } }
+  * .img_container {
+    width: 100%;
+    height: 500px;
+    position: relative; }
+    * .img_container .principal_img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden; }
+    * .img_container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.1); }
+  * .main {
+    text-align: center;
+    padding-top: 3rem; }
+    * .main .about_title {
+      font-weight: 500;
+      font-size: 1.5em;
+      line-height: 1.5; }
+    * .main .about_container {
+      margin-bottom: 3rem; }
+      * .main .about_container .about_container-image {
+        display: flex;
+        justify-content: center; }
+        * .main .about_container .about_container-image .about_img-container {
+          width: 200px;
+          height: 400px; }
+      * .main .about_container .about_text-container {
+        font-size: .8em;
+        text-align: justify; }
+        * .main .about_container .about_text-container p {
+          margin-bottom: .6rem; }
+        * .main .about_container .about_text-container .about_contact-container {
+          display: flex;
+          justify-content: end; }
+          * .main .about_container .about_text-container .about_contact-container .about_contact {
+            margin-top: 1.5rem; }

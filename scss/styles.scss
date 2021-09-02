@@ -4,8 +4,9 @@
 *{
     font-family: $montserrat;
 
+    // Social networks
     .social{
-        width: 100vw;
+        width: 100%;
         height: auto;
         padding: 8px 0;
         background-color: $blue;
@@ -56,7 +57,73 @@
         }
     }
 
-   
+    // carousel
+    .img_container{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        .principal_img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            overflow: hidden;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+       
+    }
+
+    // =============== main
+    .main{
+        text-align: center;
+        padding-top: 3rem;
+
+        .about_title{
+            // margin: 2rem 0;
+            font-weight: 500;
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+
+        // =================  About
+        .about_container{
+            margin-bottom: 3rem;
+            .about_container-image{
+                display: flex;
+                justify-content: center;
+                .about_img-container{
+                    width: 200px;
+                    height: 400px;
+                }
+            }
+    
+            .about_text-container{
+                font-size: .8em;
+                text-align: justify;
+    
+                p{
+                    margin-bottom: .6rem;
+                }
+    
+                .about_contact-container{
+                    display: flex;
+                    justify-content: end;
+                    .about_contact{
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+    
+    }
 }
 
 
