@@ -1,0 +1,47 @@
+.nav_bg {
+  background: #000; }
+  .nav_bg .logo {
+    width: 120px; }
+  .nav_bg .hamburger {
+    color: #fff; }
+  .nav_bg .nav-link {
+    color: #fff !important;
+    font-size: 1em; }
+
+* {
+  font-family: "Montserrat", sans-serif; }
+  * .social {
+    width: 100vw;
+    height: auto;
+    padding: 8px 0;
+    background-color: #106EEA; }
+    * .social_container {
+      height: 100%;
+      display: flex;
+      justify-content: space-between; }
+      * .social_container .email {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1em; }
+        * .social_container .email p {
+          margin: 0 .6rem; }
+      * .social_container .social_icon {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        font-size: 1em;
+        height: 100%; }
+    @media (max-width: 576px) {
+      * .social_container {
+        justify-content: center; }
+        * .social_container .email {
+          display: none; }
+        * .social_container .social_icon {
+          width: 20%;
+          justify-content: space-between;
+          font-size: 1.2em; } }

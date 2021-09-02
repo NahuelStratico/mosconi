@@ -1,0 +1,63 @@
+@import 'variables';
+@import './components/header';
+
+*{
+    font-family: $montserrat;
+
+    .social{
+        width: 100vw;
+        height: auto;
+        padding: 8px 0;
+        background-color: $blue;
+    
+        &_container{
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        
+            .email{
+                display: flex;
+                height: 100%;
+                align-items: center;
+                color: $white;
+                font-family: $montserrat;
+                font-size: 1em;
+    
+                p{
+                    margin: 0 .6rem;
+                }
+            }
+    
+            .social_icon{
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $white;
+                font-size: 1em;
+                height: 100%;
+            }
+        
+        }
+
+        // Mediaqueries
+        @media (max-width: 576px) { 
+            &_container{
+                justify-content: center;
+                .email{
+                    display: none;
+                }
+                .social_icon{
+                    width: 20%;
+                    justify-content: space-between;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+   
+}
+
+
+
