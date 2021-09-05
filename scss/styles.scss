@@ -81,45 +81,69 @@
        
     }
 
-    // =============== main
+    // =========================== main
     .main{
         text-align: center;
-        padding-top: 3rem;
 
-        .about_title{
-            // margin: 2rem 0;
-            font-weight: 500;
-            font-size: 1.5em;
-            line-height: 1.5;
-        }
+        // About
+        .bg_about{
+            padding: 3rem 0;
+            background: #F6F9FE;
+        
 
-        // =================  About
-        .about_container{
-            margin-bottom: 3rem;
-            .about_container-image{
-                display: flex;
-                justify-content: center;
-                .about_img-container{
-                    width: 200px;
-                    height: 400px;
-                }
+            .about_title{
+                margin-bottom:2rem;
+                font-weight: 500;
+                font-size: 1.5em;
+                line-height: 1.5;
             }
-    
-            .about_text-container{
-                font-size: .8em;
-                text-align: justify;
-    
-                p{
-                    margin-bottom: .6rem;
-                }
-    
-                .about_contact-container{
+            
+            // =================  About
+
+            .about_container{
+                margin-bottom: 3rem;
+                
+                .about_container-image{
                     display: flex;
-                    justify-content: end;
-                    .about_contact{
-                        margin-top: 1.5rem;
+                    justify-content: center;
+
+                    .about_img-container{
+                        width: 300px;
+                        // height: 400px;
                     }
                 }
+        
+                .about_text-container{
+                    font-size: .8em;
+                    text-align: justify;
+        
+                    p{
+                        line-height: 20px;
+                        // margin-bottom: .6rem;
+                    }
+        
+                    .about_contact-container{
+                        display: flex;
+                        justify-content: end;
+                        .about_contact-button{
+                            margin-top: 1.5rem;
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+        
+        // Services
+        .services_container{
+            padding: 3rem 0;
+
+            .title_container-service{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
             }
         }
     
