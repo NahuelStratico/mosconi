@@ -50,16 +50,16 @@
                     <a class="nav-link" aria-current="page" href="#">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Quienes Somos</a>
+                    <a class="nav-link" href="#quienessomos">Quienes Somos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Servicios</a>
+                    <a class="nav-link" href="#servicios">Servicios</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link pe-0" href="#">Contacto</a>
+                    <a class="nav-link pe-0" href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
@@ -75,7 +75,7 @@
     <!-- About, Services -->
     <main class="main">
         <!-- Nosotros -->
-        <div class="bg_about">
+        <div class="bg_about" id="quienessomos">
             <div class="container">
                 <h3 class="about_title">Acerca de nosotros</h3>
                 <!-- About -->
@@ -107,71 +107,68 @@
         </div>
 
         <!-- Servicios -->
-        <div class="container services_container">
+        <div class="container services_container" id="servicios">
             <div class="title_container-service">
                 <h3 class="about_title">Servicios</h3>
                 <span>Asesoramiento y presupuesto sin cargo</span>
             </div>
 
             <!-- Acordeon -->
-            <div class="accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                        Trabajos a domiciolio, obras y consorcios.
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                    <!-- Section one -->
-                    <div class="accordion-body text-start">
-                      <p>Colocación y reposición de todo tipo de vidrios y espejos a domicilio</p>
-                      <p>Reposición de puertas templadas</p>
-                      <p>Frentes vidriados de locales y edificios</p>
-                      <p>Reposición de vidrios en techos y claraboyas</p>  
-                      <p>Vidrios de seguridad (laminados , armados)</p>
-                      <p>Doble Vidriado Hermético (DVH)</p>
-                      <p>Mamparas para baño</p>
-                      <p>Provisión de tapas para mesas y escritorios</p>
-                      <p>Frentes espejados para placares.</p>
-                      <p>Barandas de escalera</p>
-                      <p>Cerramientos vidriados de piletas</p>
-                      <p>Vidrios de colores para mamparas de hierro</p>
-                    </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Trabajos a domiciolio, obras y consorcios.
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    <p>Colocación y reposición de todo tipo de vidrios y espejos a domicilio.</p>
+                    <p>Reposición de puertas templadas.</p>
+                    <p>Frentes vidriados de locales y edificios.</p>
+                    <p>Reposición de vidrios en techos y claraboyas.</p>  
+                    <p>Vidrios de seguridad (laminados , armados).</p>
+                    <p>Doble Vidriado Hermético (DVH).</p>
+                    <p>Mamparas para baño.</p>
+                    <p>Provisión de tapas para mesas y escritorios.</p>
+                    <p>Frentes espejados para placares.</p>
+                    <p>Barandas de escalera.</p>
+                    <p>Cerramientos vidriados de piletas.</p>
+                    <p>Vidrios de colores para mamparas de hierro.</p>
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        Taller propio de enmarcado.
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                    <!-- Section two -->
-                    <div class="accordion-body text-start">
-                      <p>Enmarcado de láminas, diplomas , pósters , fotos ,serigrafías , etc.</p>
-                      <p>Enmarcado de camisetas deportivas</p>
-                      <p>Enmarcado de óleos y tapices</p>
-                      <p>Marcos para espejos</p>                      
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Taller propio de enmarcado.
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    <p>Enmarcado de láminas, diplomas, pósters, fotos, serigrafías, etc.</p>
+                    <p>Enmarcado de camisetas deportivas.</p>
+                    <p>Enmarcado de óleos y tapices.</p>
+                    <p>Marcos para espejos.</p> 
                   </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                        Taller propio de vitreaux.
-                    </button>
-                  </h2>
-                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                    <!-- Section three -->
-                    <div class="accordion-body text-start">
-                      <p>Diseño y realizacion de vitrales a medida.</p>
-                      <p>Restauraciones.</p>
-                      <p>Plomo y tiffany.</p>
-                      <p>Lámparas.</p>
-                      <p>Objetos de diseño.</p>
-                    </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Taller propio de vitreaux.
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-start">
+                    <p>Diseño y realizacion de vitrales a medida.</p>
+                    <p>Restauraciones.</p>
+                    <p>Plomo y tiffany.</p>
+                    <p>Lámparas.</p>
+                    <p>Objetos de diseño.</p>
                   </div>
                 </div>
+              </div>
             </div>
         </div>
     </main>
