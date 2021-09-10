@@ -169,6 +169,7 @@ body{
     
     }
 
+    // =================== CTA
     .cta{
         background: url('../assets/img/cta-img.jpg');
         background-repeat: no-repeat;
@@ -206,6 +207,122 @@ body{
         bottom: 0;
         background: rgba(0, 0, 0, 0.3);
     }
+
+    // ==========================  Works Gallery
+    .works{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 3rem;
+
+        .works_title{
+            margin-bottom:2rem;
+            font-weight: 500;
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+
+        .works_gallery{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            .work_container{
+                overflow: hidden;
+            }
+                .work{
+                    width: 390px;
+                    height: 390px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 1.2em;
+                    position: relative;
+                    cursor: pointer;
+                    transition: all .2s ease-in-out;
+                
+        
+                    & span{
+                        z-index: 1;
+                    }
+                }
+                .work::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0, 0, 0, 0.4);
+                }
+                .work:hover{
+                    transform: scale(1.2);
+                }
+        
+                .baranda{
+                    background: url('../assets/img/barandas/barandas_01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .mampara{
+                    background: url('../assets/img/mamparas/mamparas_01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .cotidiano{
+                    background: url('../assets/img/cotidiano/cotidiano_01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .espejos{
+                    background: url('../assets/img/espejos/espejos_01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .frente_vidriados{
+                    background: url('../assets/img/frentes_vidriados/frentes_vidriados_01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .enmarcados{
+                    background: url('../assets/img/enmarcados/enmarcados_01.jpeg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .techos_vidriados{
+                    background: url('../assets/img/techos_vidriados/techos_vidriados_01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .vidrios_colores{
+                    background: url('../assets/img/vidrios_colores/vidrios_colores.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .vitrales{
+                    background: url('../assets/img/vitrales/vitrales_01.jpg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+        }
+    }
+
+    // ============ Google Maps
+
 }
 
 
