@@ -19,6 +19,7 @@ body{
             height: 100%;
             display: flex;
             justify-content: space-between;
+            align-items: center;
         
             .email{
                 display: flex;
@@ -214,7 +215,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 3rem;
+        margin: 4rem 3rem;
 
         .works_title{
             margin-bottom:2rem;
@@ -233,8 +234,8 @@ body{
                 overflow: hidden;
             }
                 .work{
-                    width: 390px;
-                    height: 390px;
+                    width: 290px;
+                    height: 290px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -243,13 +244,21 @@ body{
                     font-size: 1.2em;
                     position: relative;
                     cursor: pointer;
-                    transition: all .2s ease-in-out;
+                    transition: all .3s ease-in-out;
                 
         
                     & span{
                         z-index: 1;
                     }
                 }
+
+                // Mediaqueries  WORK
+                @media (max-width: 400px){
+                    .work{
+                        width: 290px;
+                    }
+                }
+
                 .work::before{
                     content: '';
                     position: absolute;
@@ -322,6 +331,100 @@ body{
     }
 
     // ============ Google Maps
+    .map{
+        margin-bottom: 3rem;
+
+        iframe{
+            width: 100%;
+        }
+
+    }
+
+    // ============ Footer
+    .footer{
+        width: 100%;
+        min-height: 250px;
+        background: #000;
+        p{
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 500;
+            margin: 0;
+        } 
+
+        &_container{
+            height: 100%;
+        }
+        &_row{
+            margin: 0;
+            padding-top: 2rem;
+            flex-direction: row;
+            height: 100%;
+        }
+        &_logo{
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+
+            .logo{
+                width: 120px;
+                margin-bottom: 1.5rem;
+            }
+
+            p{
+                line-height: 35px;
+                font-size: 1em;
+            }
+        }
+
+        &_menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+
+            p{
+                margin-bottom: 1rem;
+            }
+
+            a{
+                color: $white;
+                font-size: 1em;
+                text-decoration: none;
+                line-height: 35px;
+            }
+        }
+
+        &_redes{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: flex-start;
+            color: $white;
+            font-size: 1em;
+
+            p{
+                margin-bottom: 1rem;
+            }
+
+            .footer_icon{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-start;
+
+                a{
+                    margin-right: 1.5rem;
+                    font-size: 1.5em;
+                    color: $white;
+                }
+            }
+        }
+       
+
+
+    }
+
 
 }
 
