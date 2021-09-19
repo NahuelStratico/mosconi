@@ -1,5 +1,6 @@
 @import 'variables';
 @import './components/header';
+@import './pages/gallery';
 
 body{
     margin: 0;
@@ -7,6 +8,22 @@ body{
     box-sizing: border-box;
     font-family: $montserrat;
     scroll-behavior: smooth;
+
+    .desktop{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+
+    @media (max-width: 768px){
+        .mobile{
+            display: block;
+        }
+        .desktop{
+            display: none;
+        }
+    }
 
     // Social networks
     .social{
@@ -81,7 +98,7 @@ body{
             left: 0;
             bottom: 0;
             right: 0;
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(0, 0, 0, 0.3);
         }
        
     }
@@ -92,12 +109,12 @@ body{
 
         // About
         .bg_about{
-            padding: 3rem 0;
+            padding: 4rem 0;
             background: #F6F9FE;
         
 
             .about_title{
-                margin-bottom:2rem;
+                margin-bottom:3rem;
                 font-weight: 500;
                 font-size: 1.5em;
                 line-height: 1.5;
@@ -151,14 +168,14 @@ body{
         
         // Services
         .services_container{
-            padding: 3rem 0;
+            padding: 4rem 0;
 
             .title_container-service{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin-bottom: 2rem;
+                margin-bottom: 3rem;
             }
 
             @media (max-width: 520px){
@@ -215,16 +232,19 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 4rem 3rem;
+        margin: 3rem 3rem;
+        // padding: 4rem 0;
 
         .works_title{
-            margin-bottom:2rem;
+            // margin-bottom:2rem;
+            margin: 3.3rem 0;
             font-weight: 500;
             font-size: 1.5em;
             line-height: 1.5;
         }
 
         .works_gallery{
+            margin-top: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -232,6 +252,7 @@ body{
             gap: 10px;
             .work_container{
                 overflow: hidden;
+                text-decoration: none;
             }
                 .work{
                     width: 290px;
@@ -343,8 +364,9 @@ body{
     // ============ Footer
     .footer{
         width: 100%;
-        min-height: 250px;
+        height: auto;
         background: #000;
+        padding: 2rem 0;
         p{
             color: #fff;
             font-size: 1.2em;
@@ -421,7 +443,18 @@ body{
             }
         }
        
-
+        // Mediaqueries Footer
+        @media (max-width: 768px){
+            .footer_logo{
+                margin-bottom: 1rem;
+            }
+            .footer_menu{
+                margin-top: 2rem;
+            }
+            .footer_redes{
+                margin-top: 2rem;
+            }
+        }
 
     }
 

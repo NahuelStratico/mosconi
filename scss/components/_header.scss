@@ -2,6 +2,8 @@
 
 .nav_bg{
     background: $dark;
+    z-index: 10;
+    height: 60px;
 
     .logo{
         width: 120px;

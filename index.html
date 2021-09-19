@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link  rel="icon"   href="./assets/img/logo.png" type="image/png" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,7 @@
 </head>
 <body>
     <!-- social networks  -->
-    <div class="social">
+    <div class="social" id="inicio">
         <div class="container social_container">
             <div class="email">
                 <i class="fas fa-envelope"></i>
@@ -35,7 +37,7 @@
     </div>
 
     <!-- Header -->
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark nav_bg">
             <div class="container">
               <a class="navbar-brand" href="#">
@@ -47,7 +49,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto nav_menu">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#quienessomos">Quienes Somos</a>
@@ -56,7 +58,7 @@
                     <a class="nav-link" href="#servicios">Servicios</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
+                    <a class="nav-link" href="#works">Galería</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link pe-0" href="#contacto">Contacto</a>
@@ -69,13 +71,14 @@
 
     <!-- Carousel -->
     <div class="img_container">
-        <img src="./assets/img/frente.jpg" class="principal_img" alt="Vidrieria Mosconi">
+        <img src="./assets/img/frente2.jpeg" class="principal_img desktop" alt="Vidrieria Mosconi">
+        <img src="./assets/img/frente.jpg" class="principal_img mobile" alt="Vidrieria Mosconi">
     </div>
 
     <!-- About, Services -->
-    <main class="main">
+    <main class="main" id="quienessomos">
         <!-- Nosotros -->
-        <div class="bg_about" id="quienessomos">
+        <div class="bg_about">
             <div class="container">
                 <h3 class="about_title">Acerca de nosotros</h3>
                 <!-- About -->
@@ -180,16 +183,16 @@
     </section>
 
     <!-- Works Gallery -->
-    <section class="works">
+    <section class="works" id="works">
       <h3 class="works_title">Galeria de trabajos</h3>
 
       <div class="works_gallery">
         <!-- Barandas -->
-        <div class="work_container">
+        <a href="./pages/barandas.html" class="work_container">
           <div class="work baranda">
             <span>Barandas</span>
           </div>
-        </div>
+        </a>
 
         <!-- Mamparas de baño -->
         <div class="work_container">
