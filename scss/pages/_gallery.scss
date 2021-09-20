@@ -1,13 +1,28 @@
 @import 'variables';
 
-
-.row{
+.bread_container{
+    margin-top: 2rem;
+    .breadcrumb_mine{
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
+.gallery_row{
     margin: 1rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .gallery_title{
+       font-weight: 400;
+    }
+    .title_bar{
+        width: 80px;
+        height: 1px;
+        background: #000;
         margin: 0 0 3rem 0;
     }
-
     .gallery_container{
         display: flex;
         flex-direction: row;
@@ -17,7 +32,7 @@
         .gallery{
             width: calc(33.3333% - 5px);
             height: 300px;
-            cursor: pointer;
+            // cursor: pointer;
         
             &_img{
                 width: 100%;

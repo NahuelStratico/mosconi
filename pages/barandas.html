@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- Favicon -->
-     <link  rel="icon"   href="./assets/img/logo.png" type="image/png" />
+     <link  rel="icon"   href="../assets/img/logo.png" type="image/png" />
      <!-- Google Font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/afecc65938.js" crossorigin="anonymous"></script>
      <!-- CSS Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <!-- Styles CSS -->
@@ -23,7 +25,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark nav_bg">
             <div class="container">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="../index.html">
                   <img src="../assets/img/logo.jpg" class="logo" alt="Logo Mosconi">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,12 +54,13 @@
         </nav>
     </header>
 
+    <!-- Breadcrumb -->
     <div class="container bread_container">
         <div class="row">
             <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="../index.html#works">Galería</a></li>
+                      <li class="breadcrumb-item"><a class="breadcrumb_mine" href="../index.html#works">Galería</a></li>
                       <li class="breadcrumb-item active" aria-current="page">Barandas</li>
                     </ol>
                   </nav>
@@ -67,8 +70,9 @@
 
     <!-- Gallery -->
     <div class="container">
-        <div class="row text-center">
-            <h1 class="h1 gallery_title">Barandas</h1>
+        <div class="row text-center gallery_row">
+            <h1 class="gallery_title">Barandas</h1>
+            <span class="title_bar"></span>
 
             <div class="gallery_container">
                 <div class="gallery">
@@ -89,6 +93,36 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="row footer_row">
+          <div class="col-12 col-md-4 footer_logo">
+            <img src="../assets/img/logo.jpg" alt="Logo Vidrieria Mosconi" class="logo">
+            <p>Av. Mosconi 2585, C.A.B.A.</p>
+            <p>Whatsapp: 11 6597-9588</p>
+            <p>Email: arqmfv@gmail.com</p>
+          </div>
+          <div class="col-12 col-md-4 footer_menu">
+            <p>Mapa del sitio</p>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+            <a href="#">Portfolio</a>
+          </div>
+          <div class="col-12 col-md-4 footer_redes">
+            <p>Seguinos en nuestras Redes</p>
+            <div class="footer_icon">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
 
     <!-- Javascript BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
