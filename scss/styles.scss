@@ -165,10 +165,14 @@ body{
                 }
             }
         }
+
+        #servicios{
+            // margin-top: 3rem;
+        }
         
         // Services
         .services_container{
-            padding: 4rem 0;
+            padding: 4rem 0 4rem 0;
 
             .title_container-service{
                 display: flex;
@@ -195,7 +199,7 @@ body{
         background-size: cover;
         width: 100%;
         height: 170px;
-        margin: 2rem 0;
+        // margin: 2rem 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -242,6 +246,11 @@ body{
             font-size: 1.5em;
             line-height: 1.5;
         }
+        @media (max-width: 400px){
+            .works_title{
+                font-size: 1.3em;
+            }
+        }
 
         .works_gallery{
             margin-top: 1rem;
@@ -277,6 +286,9 @@ body{
                 @media (max-width: 400px){
                     .work{
                         width: 290px;
+                    }
+                    .works_title{
+                        font-size: 1.3em;
                     }
                 }
 

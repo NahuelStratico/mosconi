@@ -144,7 +144,7 @@ body {
         body .main .bg_about .about_contact-button {
           width: 100%; } }
     body .main .services_container {
-      padding: 4rem 0; }
+      padding: 4rem 0 4rem 0; }
       body .main .services_container .title_container-service {
         display: flex;
         flex-direction: column;
@@ -161,7 +161,6 @@ body {
     background-size: cover;
     width: 100%;
     height: 170px;
-    margin: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -197,6 +196,9 @@ body {
       font-weight: 500;
       font-size: 1.5em;
       line-height: 1.5; }
+    @media (max-width: 400px) {
+      body .works .works_title {
+        font-size: 1.3em; } }
     body .works .works_gallery {
       margin-top: 1rem;
       display: flex;
@@ -223,7 +225,9 @@ body {
           z-index: 1; }
       @media (max-width: 400px) {
         body .works .works_gallery .work {
-          width: 290px; } }
+          width: 290px; }
+        body .works .works_gallery .works_title {
+          font-size: 1.3em; } }
       body .works .works_gallery .work::before {
         content: '';
         position: absolute;
