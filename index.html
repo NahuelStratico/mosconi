@@ -20,6 +20,35 @@
     <title>Vidriería Mosconi</title>
 </head>
 <body>
+
+  <div class="menu_screen">
+    <span class="close">
+      <i class="fas fa-times close_icon"></i>
+    </span>
+    <nav>
+      <a href="./index.html#inicio">
+        <span class="main">Inicio</span>
+        <span>Bienvenido a nuestro sitio</span>
+      </a>
+      <a href="./index.html#quienessomos">
+        <span class="main">Quienes Somos</span>
+        <span>Un Legado familiar</span>
+      </a>
+      <a href="./index.html#servicios">
+        <span class="main">Servicios</span>
+        <span>Asesoramos sin costo</span>
+      </a>
+      <a href="./index.html#works">
+        <span class="main">¿Qué hacemos?</span>
+        <span>Galería de trabajos</span>
+      </a>
+      <a href="#contacto">
+        <span class="main">Contacto</span>
+        <span>Contanos tu proyecto</span>
+      </a>
+    </nav>
+  </div>
+    
     <!-- social networks  -->
     <div class="social" id="inicio">
         <div class="container social_container">
@@ -35,9 +64,42 @@
             </div>
         </div>
     </div>
+    
+    <header class="header">
+      <nav class="nav">
+          <div class="container menu_container">
+            <a href="./index.html">
+                <img src="./assets/img/logo.jpg" class="logo" alt="Logo Mosconi">
+            </a>
+
+            <span class="menu_burger" id="burgerMenu"><i class="fas fa-bars icon_menu"></i></span>
+
+            <ul class="nav_menu">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quienessomos">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#works">¿Qué hacemos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-0" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header> 
+
+    
+
 
     <!-- Header -->
-    <header class="sticky-top">
+    <!-- <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-dark nav_bg">
             <div class="container">
               <a class="navbar-brand" href="./index.html">
@@ -67,7 +129,7 @@
               </div>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <!-- Carousel -->
     <div class="img_container">
@@ -180,10 +242,10 @@
     </main>
 
     <!-- CTA -->
-    <section class="cta" id="works">
+    <a href="http://wa.me/5491165979588" target="_blank" class="cta" id="works">
       <h5>Asesoramiento, presupuestos y pedidos acá !!</h5>
       <img src="./assets/img/whatsapp.png" alt="whatsapp">
-    </section>
+    </a>
 
     <!-- Works Gallery -->
     <section class="works"  >
@@ -293,11 +355,13 @@
       </div>
     </footer>
 
+    <!-- Whatsapp flotante -->
+    <a href="http://wa.me/5491165979588" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
-    <script src="./index.js"></script>
+    <script src="./js/main.js"></script>
     <!-- Javascript BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
+   
 </body>
 </html>

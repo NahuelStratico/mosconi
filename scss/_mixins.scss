@@ -1,0 +1,9 @@
+@mixin center-vertical-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition{
+    transition: all 0.6s ease-out;
+}
