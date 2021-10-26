@@ -241,7 +241,8 @@ body {
             line-height: 20px; }
           body .main .bg_about .about_container .about_text-container .about_contact-container {
             display: flex;
-            justify-content: end; }
+            justify-content: end;
+            text-decoration: none; }
             body .main .bg_about .about_container .about_text-container .about_contact-container .about_contact-button {
               margin-top: 1.5rem;
               font-size: 1.2em; }

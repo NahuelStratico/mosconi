@@ -148,9 +148,11 @@ body{
                     .about_contact-container{
                         display: flex;
                         justify-content: end;
+                        text-decoration: none;
                         .about_contact-button{
                             margin-top: 1.5rem;
                             font-size: 1.2em;
+                            
                         }
                     }
                 }
@@ -167,10 +169,7 @@ body{
             }
         }
 
-        #servicios{
-            // margin-top: 3rem;
-        }
-        
+
         // Services
         .services_container{
             padding: 4rem 0 4rem 0;
